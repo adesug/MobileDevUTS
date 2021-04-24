@@ -42,7 +42,7 @@ class UpdateActivity : AppCompatActivity(), BarangActivityContract.ViewEdit {
     }
 
     override fun success(message: String?) {
-        startActivity(Intent(this, MainActivity::class.java))
+        startActivity(Intent(this, SettingActivity::class.java))
         finish()
     }
 

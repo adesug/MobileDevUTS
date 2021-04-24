@@ -39,7 +39,7 @@ class LoginActivity : AppCompatActivity(),LoginActivityContract.View {
 
     override fun success(token: String, user_id: String) {
         Utils.setToken(this,token,user_id)
-        startActivity(Intent(this,BarangActivity::class.java))
+        startActivity(Intent(this,MainActivity::class.java))
             .also {
                 finish()
             }

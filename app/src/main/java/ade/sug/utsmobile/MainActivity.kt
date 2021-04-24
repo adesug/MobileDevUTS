@@ -24,15 +24,14 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-
     private fun view(){
-        button.setOnClickListener {
+        barang.setOnClickListener {
             startActivity(Intent(this,BarangActivity::class.java))
         }
     }
     private fun create(){
-        button2.setOnClickListener {
-            startActivity(Intent(this,CreateBarangActivity::class.java))
+        setting.setOnClickListener {
+            startActivity(Intent(this,SettingActivity::class.java))
         }
     }
 }

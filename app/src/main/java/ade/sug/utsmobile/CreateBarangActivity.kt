@@ -36,7 +36,7 @@ class CreateBarangActivity : AppCompatActivity(),BarangActivityContract.ViewCrea
     }
     override fun success(message: String?) {
         Toast.makeText(applicationContext, "Data Ditambahkan", Toast.LENGTH_SHORT).show()
-        startActivity(Intent(this, MainActivity::class.java))
+        startActivity(Intent(this, SettingActivity::class.java))
         finish()
     }
 

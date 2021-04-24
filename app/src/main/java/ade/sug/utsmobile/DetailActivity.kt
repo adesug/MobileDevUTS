@@ -63,7 +63,7 @@ class DetailActivity : AppCompatActivity(),BarangActivityContract.ViewDelete {
 
     override fun success(message: String?) {
         Toast.makeText(applicationContext, "Data berhasil dihapus", Toast.LENGTH_SHORT).show()
-        startActivity(Intent(this, MainActivity::class.java))
+        startActivity(Intent(this, SettingActivity::class.java))
         finish()
 
     }
